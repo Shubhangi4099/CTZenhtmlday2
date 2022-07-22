@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Assingment5</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-family: 'Times New Roman', Times, serif;
+        margin: 20px;
+        padding: 12px;
+        }
+        header{
+            background-color: rgb(208, 136, 43);
+            text-align: center;
+        }
+        footer{
+            background-color: rgb(208, 136, 43);
+            text-decoration: solid;
+            font-style: oblique;
+        }
+    </style>
+  </head>
+  <body>
+    <header><h1>Using File Version Info</h1></header>
+  
+  <p>Getting the version number of any managed/ unmanged DLL or excutable in NET 1.0,if I recall
+    correctly ,Required some magic incantation with plnvoke. <br>
+    I just discovered the fileVersion class from System Diagnostics: <br>
+    FileVersioninfo versionInfo;versioninfo = FileVersionOInfo.GetVersionInfo(@"e:\win2003\system32\svchost.exe")
+    Message Box.Show(VersionInfo.ToString());<br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+    Cumque temporibus eum id illum quo amet est tenetur, 
+    eaque alias porro vitae tempora minima voluptas commodi aperiam esse ullam doloribus.
+     Maxime?
+     <br>
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+     Nihil, magni. Sed et tenetur placeat rerum fugit 
+     laudantium magnam nam quod perspiciatis deleniti illum corrupti quia,
+      pariatur recusandae aut unde quibusdam.
+  <br>
+  To use the class then, all you need to do this:
+  <ul>
+    <li>
+        1. Invoke the stastic GetVersionInfo method
+    </li>
+    <li>2. Start using the propertices of the resulting object</li>
+  </ul>
+<br>
+the version is a 64 bit number:
+<br>
+<ul>
+    <li>
+        The First 16 bits are the mojor number
+    </li>
+    <li>
+        The next 16 bits are minor number
+    </li>
+    <li>
+        the third set f 16 bits are the build number
+    </li>
+    <li>
+        the last 16 bits are the private build number
+    </li>
+</ul>
+
+</p>
+<footer>
+    (c)2005 Copyright notice CitiusTech
+</footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
